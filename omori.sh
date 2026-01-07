@@ -1,9 +1,9 @@
 #!/bin/sh
 
 echo ""
-echo "/-------------------------------------------\\"
-echo "|     - OMORI PATCH TOOL FOR INTEL -        |"
-echo "\\-------------------------------------------/"
+echo "/---------------------------------------\\"
+echo "|     - OMORI PATCH TOOL FOR INTEL -    |"
+echo "\\---------------------------------------/"
 echo ""
 
 OMORI=~/Library/Application\ Support/Steam/steamapps/common/OMORI
@@ -27,12 +27,12 @@ mv "${OMORI}" "./Omori.original.app";
 echo "Downloading nwjs for Intel.."
 curl -#L -o nwjs.zip https://dl.node-webkit.org/v0.106.1/nwjs-v0.106.1-osx-x64.zip
 echo "Downloading node polyfill patch.."
-curl -#L -o node-polyfill-patch.js https://github.com/SnowpMakes/omori-apple-silicon/releases/download/v1.1.0/node-polyfill-patch.js
+curl -#L -o node-polyfill-patch.js https://github.com/BasilGunderson/omori-apple-silicon-and-intel/releases/download/v1.0.0/node-polyfill-patch.js
 echo "Downloading greenworks patches for Intel.."
-curl -#L -o greenworks.js https://github.com/SnowpMakes/omori-apple-silicon/releases/download/v1.1.0/greenworks.js
-curl -#L -o greenworks-osxx64.node https://github.com/SnowpMakes/greenworks-x64/releases/download/v1.0.0/greenworks-osxx64.node
+curl -#L -o greenworks.js https://github.com/BasilGunderson/omori-apple-silicon-and-intel/releases/download/v1.0.0/greenworks.js
+curl -#L -o greenworks-osxx64.node https://github.com/BasilGunderson/omori-apple-silicon-and-intel/releases/download/v1.0.0/greenworks-osx.node
 echo "Downloading steamworks api.."
-curl -#L -o steam.zip https://dl.snowp.io/omori-apple-silicon/steam.zip
+curl -#L -o steam.zip https://github.com/BasilGunderson/omori-apple-silicon-and-intel/releases/download/v1.0.0/steam.zip
 
 echo "Extracting nwjs.."
 unzip -q nwjs.zip
