@@ -1,4 +1,4 @@
-# For instructions, view [patch.md](https://github.com/SnowpMakes/omori-apple-silicon/blob/master/patch.md).
+# For instructions, view [patch.md](https://github.com/BasilGunderson/omori-apple-silicon-and-intel/blob/main/patch.md).
 
 ## Special Thanks
 
