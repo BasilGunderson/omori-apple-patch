@@ -128,13 +128,13 @@ if [ ! -d "./steam" ]; then
   exit 1
 fi
 
-if [ ! -d "./steam/libsteamapi.dylib" ]; then
+if [ ! "./steam/libsteamapi.dylib" ]; then
   echo "[!!] Expected libsteamapi.dylib not found after extraction. Restoring original game and exiting."
   mv "./OMORI.original" "${OMORI}"
   exit 1
 fi
 
-if [ ! -d "./steam/libsdkencryptedappticket.dylib" ]; then
+if [ ! "./steam/libsdkencryptedappticket.dylib" ]; then
   echo "[!!] Expected libsdkencryptedappticket.dylib not found after extraction. Restoring original game and exiting."
   mv "./OMORI.original" "${OMORI}"
   exit 1
