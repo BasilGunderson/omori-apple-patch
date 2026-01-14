@@ -45,7 +45,7 @@ if [ $? -ne 0 ]; then
 fi
 
 echo "Downloading node polyfill patch.."
-curl -#L -o node-polyfill-patch.js https://github.com/BasilGunderson/omori-apple-silicon-and-intel/releases/download/v1.0.0/node-polyfill-patch.js
+curl -#L -o node-polyfill-patch.js https://github.com/BasilGunderson/omori-apple-and-linux/releases/download/v1.0.0/node-polyfill-patch.js
 if [ $? -ne 0 ]; then
   echo "[!!] Failed to download node polyfill patch. Restoring original game and exiting."
   mv "./OMORI.original" "${OMORI}"
@@ -53,8 +53,8 @@ if [ $? -ne 0 ]; then
 fi
 
 echo "Downloading greenworks patches for Intel.."
-curl -#L -o greenworks.js https://github.com/BasilGunderson/omori-apple-silicon-and-intel/releases/download/v1.0.0/greenworks.js
-curl -#L -o greenworks-osx64.node https://github.com/BasilGunderson/omori-apple-silicon-and-intel/releases/download/v1.0.0/greenworks-osx64.node
+curl -#L -o greenworks.js https://github.com/BasilGunderson/omori-apple-and-linux/releases/download/v1.0.0/greenworks.js
+curl -#L -o greenworks-osx64.node https://github.com/BasilGunderson/omori-apple-and-linux/releases/download/v1.0.0/greenworks-osx64.node
 if [ $? -ne 0 ]; then
   echo "[!!] Failed to download greenworks patches. Restoring original game and exiting."
   mv "./OMORI.original" "${OMORI}"
@@ -62,7 +62,7 @@ if [ $? -ne 0 ]; then
 fi
 
 echo "Downloading steamworks api.."
-curl -#L -o steam.zip https://github.com/BasilGunderson/omori-apple-silicon-and-intel/releases/download/v1.0.0/steam.zip
+curl -#L -o steam.zip https://github.com/BasilGunderson/omori-apple-and-linux/releases/download/v1.0.0/steam.zip
 if [ $? -ne 0 ]; then
   echo "[!!] Failed to download steamworks api. Restoring original game and exiting."
   mv "./OMORI.original" "${OMORI}"
@@ -108,7 +108,7 @@ unzip -qq steam.zip
 if [ $? -ne 0 ]; then
   echo "[!!] Failed to extract steam.zip. The file may be corrupted. Trying to re-download..."
   rm -f steam.zip
-  curl -#L -o steam.zip https://github.com/BasilGunderson/omori-apple-silicon-and-intel/releases/download/v1.0.0/steam.zip
+  curl -#L -o steam.zip https://github.com/BasilGunderson/omori-apple-and-linux/releases/download/v1.0.0/steam.zip
   if [ $? -ne 0 ]; then
     echo "[!!] Failed to re-download steamworks api. Restoring original game and exiting."
     mv "./OMORI.original" "${OMORI}"
