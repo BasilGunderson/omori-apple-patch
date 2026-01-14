@@ -27,10 +27,11 @@ fi;
 cp -r "${OMORI}/OMORI.app" "${OMORI}/OMORI.original.app";
 
 
-# Moves game files to temporary folder
+# Creates temporary folder
 TMPFOLDER=`mktemp -d /tmp/omori-patch.XXXXXX` || exit 1
-cd $TMPFOLDER; # Creates temporary folder
+cd $TMPFOLDER;
 
+# Moves game files to temporary folder
 mv "${OMORI}/OMORI.app" "./OMORI.original.app";
 
 
@@ -121,7 +122,6 @@ if [ $? -ne 0 ]; then
   fi
 fi
 
-# Verify that the extraction created the expected directory
 if [ ! -d "./steam" ]; then
   echo "[!!] Expected steamworks directory not found after extraction. Restoring original game and exiting."
   mv "./OMORI.original.app" "${OMORI}/OMORI.app"
