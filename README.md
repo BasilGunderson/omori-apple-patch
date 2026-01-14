@@ -1,5 +1,9 @@
 # For instructions, view [patch.md](https://github.com/BasilGunderson/omori-apple-silicon-and-intel/blob/main/patch.md).
 
+## To-Do
+- Testing
+- Linux patch for native running
+
 ## Special Thanks
 
 [Snowp](https://github.com/SnowpMakes) and [ynx0/Yaseen](https://github.com/ynx0) for creating [the original patch for Apple Silicon](https://github.com/SnowpMakes/omori-apple-silicon)
