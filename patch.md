@@ -27,7 +27,7 @@ If MacOS complains about the security of the file, or it's "not executable", ope
 
 ### Run the patch
 
-Open a Terminal, then run this command `bash <(curl -s https://raw.githubusercontent.com/BasilGunderson/omori-apple-and-linux/main/omori.sh)`
+Open a Terminal, then run this command `bash <(curl -s https://raw.githubusercontent.com/BasilGunderson/omori-apple-and-linux/main/omori-apple-intel-patch.sh)`
 
 ### Alternatively, for manual install
 
@@ -36,5 +36,6 @@ Download the repository and run this command `chmod +x path_to_sh_file_in_cloned
 After that, drag the .sh file into your terminal (or enter the path to the sh) and press Enter.
 
 Once the process has finished, quit terminal and launch OMORI through Steam.
+
 
 
