@@ -2,9 +2,11 @@
 
 *How do I apply the patch?*
 
+
 ## Preparation
 
 Make sure you have Steam installed, and OMORI is downloaded within Steam. Launch the game at least once after downloading it. It'll probably crash but that's okay.
+
 
 ## If you're on Apple Silicon:
 
@@ -38,4 +40,7 @@ After that, drag the .sh file into your terminal (or enter the path to the sh) a
 Once the process has finished, quit terminal and launch OMORI through Steam.
 
 
+# Uninstall
+
+Simply verify the integrity of your OMORI game files through Steam.
 
