@@ -2,9 +2,9 @@
 
 
 echo ""
-echo "/---------------------------------------\\"
-echo "|     - OMORI PATCH TOOL FOR INTEL -    |"
-echo "\\---------------------------------------/"
+echo "/-----------------------------------------\\"
+echo "|     - OMORI APPLE INTEL PATCH TOOL -    |"
+echo "\\-----------------------------------------/"
 echo ""
 
 
@@ -141,7 +141,7 @@ if [ ! "./steam/libsdkencryptedappticket.dylib" ]; then
 fi
 
 
-# Patches game by moving files
+# Patches game by moving files, with error checking for each mv command
 echo "Patching game.."
 mv "./nwjs-v0.103.1-osx-x64/nwjs.app" "./OMORI.app"
 if [ $? -ne 0 ]; then
