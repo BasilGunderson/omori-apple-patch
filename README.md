@@ -1,8 +1,4 @@
-# For instructions, view [patch.md](https://github.com/BasilGunderson/omori-apple-silicon-and-intel/blob/main/patch.md).
-
-## To-Do
-- Testing
-- Linux patch for native running
+# For instructions, view [patch.md](https://github.com/BasilGunderson/omori-apple-patch/blob/main/patch.md).
 
 ## Special Thanks
 
