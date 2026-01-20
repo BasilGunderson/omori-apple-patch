@@ -33,9 +33,9 @@ Open a Terminal, then run this command `bash <(curl -s https://raw.githubusercon
 
 ### Alternatively, for manual install
 
-Download the repository and run this command `chmod +x path_to_sh_file_in_cloned_repo`
+Download the latest version of the patch script (omori-apple-intel-patch.sh) from the [releases](https://github.com/BasilGunderson/omori-apple-patch/releases/latest) page and run this command `chmod +x path_to_sh_file_in_download_folder`
 
-After that, drag the .sh file into your terminal (or enter the path to the sh) and press Enter.
+After that, drag the .sh file into your terminal (or enter the path to the .sh file) and press Enter.
 
 Once the process has finished, quit terminal and launch OMORI through Steam.
 
@@ -45,3 +45,4 @@ Once the process has finished, quit terminal and launch OMORI through Steam.
 Simply verify the integrity of your OMORI game files through Steam
 
 Afterwards, delete the OMORI Patch folder found inside of your tmp (or temp) folder.
+
