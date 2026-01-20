@@ -1,4 +1,4 @@
-# Technical Writeup on the OMORI Mac (arm64/x64) and Linux patch
+# Technical Writeup on the OMORI Mac (arm64/x64) patch
 
 ## Quick outline
 * Repackage omori into nw.js [v0.103.1](https://dl.nwjs.io/v0.103.1/)
