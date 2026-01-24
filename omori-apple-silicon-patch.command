@@ -14,25 +14,25 @@ OMORI=~/Library/Application\ Support/Steam/steamapps/common/OMORI
 
 # Looks for Omori
 if [ ! -d "${OMORI}" ] || [ ! -d "${OMORI}/OMORI.app" ]; then
-  echo "[!!] Please install OMORI using Steam before using this tool.";
-  exit 1;
-fi;
+  echo "[!!] Please install OMORI using Steam before using this tool."
+  exit 1
+fi
 
 
 # Copies files to backup folder
 echo "Backing up original OMORI copy.."
 if [ -f "${OMORI}/OMORI.original.app" ]; then
   rm -rf "${OMORI}/OMORI.original.app" # Removes original backup
-fi;
-cp -r "${OMORI}/OMORI.app" "${OMORI}/OMORI.original.app";
+fi
+cp -r "${OMORI}/OMORI.app" "${OMORI}/OMORI.original.app"
 
 
 # Creates temporary folder
-TMPFOLDER=`mktemp -d /tmp/omori-patch.XXXXXX` || exit 1
-cd $TMPFOLDER;
+TMPFOLDER=$(mktemp -d /tmp/omori-patch.XXXXXX) || exit 1
+cd "$TMPFOLDER"
 
 # Moves game files to temporary folder
-mv "${OMORI}/OMORI.app" "./OMORI.original.app";
+mv "${OMORI}/OMORI.app" "./OMORI.original.app"
 
 
 # Downloads required files with error checks
