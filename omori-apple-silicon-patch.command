@@ -72,7 +72,7 @@ echo ""
 echo "Downloading Steamworks API..."
 curl -#L -o steam.zip https://github.com/BasilGunderson/omori-apple-patch/releases/download/v1.0.0/steam.zip
 if [ $? -ne 0 ]; then
-  echo "[!!] Failed to download steamworks api. Restoring original game and exiting."
+  echo "[!!] Failed to download Steamworks API. Restoring original game and exiting."
   echo ""
   mv "./OMORI.original.app" "${OMORI}/OMORI.app"
   exit 1
